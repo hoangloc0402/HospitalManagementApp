@@ -1,6 +1,6 @@
 ﻿namespace HospitalManagementApp
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,9 @@
             this._Form1_Toolbars_Dock_Area_Right = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._Form1_Toolbars_Dock_Area_Top = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._Form1_Toolbars_Dock_Area_Bottom = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.ultraToolbarsManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // ultraToolbarsManager1
@@ -49,6 +51,7 @@
             this.ultraToolbarsManager1.DesignerFlags = 1;
             this.ultraToolbarsManager1.DockWithinContainer = this;
             this.ultraToolbarsManager1.DockWithinContainerBaseType = typeof(System.Windows.Forms.Form);
+            this.ultraToolbarsManager1.Office2007UICompatibility = false;
             this.ultraToolbarsManager1.Ribbon.FileMenuStyle = Infragistics.Win.UltraWinToolbars.FileMenuStyle.ApplicationMenu2010;
             ribbonTab1.Caption = "Tìm kiếm thông tin bệnh nhân";
             ribbonGroup1.Caption = "ribbonGroup1";
@@ -78,9 +81,9 @@
             this._Form1_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left;
             this._Form1_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText;
             this._Form1_Toolbars_Dock_Area_Left.InitialResizeAreaExtent = 1;
-            this._Form1_Toolbars_Dock_Area_Left.Location = new System.Drawing.Point(0, 174);
+            this._Form1_Toolbars_Dock_Area_Left.Location = new System.Drawing.Point(0, 149);
             this._Form1_Toolbars_Dock_Area_Left.Name = "_Form1_Toolbars_Dock_Area_Left";
-            this._Form1_Toolbars_Dock_Area_Left.Size = new System.Drawing.Size(1, 291);
+            this._Form1_Toolbars_Dock_Area_Left.Size = new System.Drawing.Size(1, 350);
             this._Form1_Toolbars_Dock_Area_Left.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _Form1_Toolbars_Dock_Area_Right
@@ -90,9 +93,9 @@
             this._Form1_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right;
             this._Form1_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText;
             this._Form1_Toolbars_Dock_Area_Right.InitialResizeAreaExtent = 1;
-            this._Form1_Toolbars_Dock_Area_Right.Location = new System.Drawing.Point(957, 174);
+            this._Form1_Toolbars_Dock_Area_Right.Location = new System.Drawing.Point(999, 149);
             this._Form1_Toolbars_Dock_Area_Right.Name = "_Form1_Toolbars_Dock_Area_Right";
-            this._Form1_Toolbars_Dock_Area_Right.Size = new System.Drawing.Size(1, 291);
+            this._Form1_Toolbars_Dock_Area_Right.Size = new System.Drawing.Size(1, 350);
             this._Form1_Toolbars_Dock_Area_Right.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _Form1_Toolbars_Dock_Area_Top
@@ -103,7 +106,7 @@
             this._Form1_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText;
             this._Form1_Toolbars_Dock_Area_Top.Location = new System.Drawing.Point(0, 0);
             this._Form1_Toolbars_Dock_Area_Top.Name = "_Form1_Toolbars_Dock_Area_Top";
-            this._Form1_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(958, 174);
+            this._Form1_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(1000, 149);
             this._Form1_Toolbars_Dock_Area_Top.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _Form1_Toolbars_Dock_Area_Bottom
@@ -113,24 +116,36 @@
             this._Form1_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom;
             this._Form1_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText;
             this._Form1_Toolbars_Dock_Area_Bottom.InitialResizeAreaExtent = 1;
-            this._Form1_Toolbars_Dock_Area_Bottom.Location = new System.Drawing.Point(0, 465);
+            this._Form1_Toolbars_Dock_Area_Bottom.Location = new System.Drawing.Point(0, 499);
             this._Form1_Toolbars_Dock_Area_Bottom.Name = "_Form1_Toolbars_Dock_Area_Bottom";
-            this._Form1_Toolbars_Dock_Area_Bottom.Size = new System.Drawing.Size(958, 1);
+            this._Form1_Toolbars_Dock_Area_Bottom.Size = new System.Drawing.Size(1000, 1);
             this._Form1_Toolbars_Dock_Area_Bottom.ToolbarsManager = this.ultraToolbarsManager1;
             // 
-            // Form1
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(85, 216);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 9;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(958, 466);
+            this.ClientSize = new System.Drawing.Size(1000, 500);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this._Form1_Toolbars_Dock_Area_Left);
             this.Controls.Add(this._Form1_Toolbars_Dock_Area_Right);
             this.Controls.Add(this._Form1_Toolbars_Dock_Area_Bottom);
             this.Controls.Add(this._Form1_Toolbars_Dock_Area_Top);
-            this.Name = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "MainForm";
             this.Text = "Hospital Management Application";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ultraToolbarsManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -142,6 +157,7 @@
         private Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea _Form1_Toolbars_Dock_Area_Right;
         private Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea _Form1_Toolbars_Dock_Area_Bottom;
         private Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea _Form1_Toolbars_Dock_Area_Top;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
