@@ -16,5 +16,6 @@ namespace HospitalManagementApp
         {
             InitializeComponent();
         }
+
     }
 }
