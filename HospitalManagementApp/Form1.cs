@@ -16,5 +16,15 @@ namespace HospitalManagementApp
         {
             InitializeComponent();
         }
+
+        private void ultraToolbarsManager1_ToolClick(object sender, Infragistics.Win.UltraWinToolbars.ToolClickEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

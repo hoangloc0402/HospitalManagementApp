@@ -49,70 +49,73 @@
             this.ultraToolbarsManager1.DesignerFlags = 1;
             this.ultraToolbarsManager1.DockWithinContainer = this;
             this.ultraToolbarsManager1.DockWithinContainerBaseType = typeof(System.Windows.Forms.Form);
-            ribbonTab1.Caption = "ribbon1";
+            this.ultraToolbarsManager1.Ribbon.FileMenuStyle = Infragistics.Win.UltraWinToolbars.FileMenuStyle.ApplicationMenu2010;
+            ribbonTab1.Caption = "Tìm kiếm thông tin bệnh nhân";
             ribbonGroup1.Caption = "ribbonGroup1";
             ribbonGroup1.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
             buttonTool1});
             ribbonTab1.Groups.AddRange(new Infragistics.Win.UltraWinToolbars.RibbonGroup[] {
             ribbonGroup1});
-            ribbonTab2.Caption = "ribbon2";
-            ribbonTab3.Caption = "ribbon3";
-            ribbonTab4.Caption = "ribbon4";
+            ribbonTab2.Caption = "Thêm bệnh nhân";
+            ribbonTab3.Caption = "Danh sách thuốc cần phát";
+            ribbonTab4.Caption = "Tạo báo cáo";
             this.ultraToolbarsManager1.Ribbon.NonInheritedRibbonTabs.AddRange(new Infragistics.Win.UltraWinToolbars.RibbonTab[] {
             ribbonTab1,
             ribbonTab2,
             ribbonTab3,
             ribbonTab4});
             this.ultraToolbarsManager1.Ribbon.Visible = true;
+            this.ultraToolbarsManager1.Style = Infragistics.Win.UltraWinToolbars.ToolbarStyle.Office2013;
             buttonTool2.SharedPropsInternal.Caption = "AAA";
             this.ultraToolbarsManager1.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
             buttonTool2});
+            this.ultraToolbarsManager1.ToolClick += new Infragistics.Win.UltraWinToolbars.ToolClickEventHandler(this.ultraToolbarsManager1_ToolClick);
             // 
             // _Form1_Toolbars_Dock_Area_Left
             // 
             this._Form1_Toolbars_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this._Form1_Toolbars_Dock_Area_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
+            this._Form1_Toolbars_Dock_Area_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this._Form1_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left;
             this._Form1_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText;
-            this._Form1_Toolbars_Dock_Area_Left.InitialResizeAreaExtent = 8;
-            this._Form1_Toolbars_Dock_Area_Left.Location = new System.Drawing.Point(0, 187);
+            this._Form1_Toolbars_Dock_Area_Left.InitialResizeAreaExtent = 1;
+            this._Form1_Toolbars_Dock_Area_Left.Location = new System.Drawing.Point(0, 174);
             this._Form1_Toolbars_Dock_Area_Left.Name = "_Form1_Toolbars_Dock_Area_Left";
-            this._Form1_Toolbars_Dock_Area_Left.Size = new System.Drawing.Size(8, 271);
+            this._Form1_Toolbars_Dock_Area_Left.Size = new System.Drawing.Size(1, 291);
             this._Form1_Toolbars_Dock_Area_Left.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _Form1_Toolbars_Dock_Area_Right
             // 
             this._Form1_Toolbars_Dock_Area_Right.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this._Form1_Toolbars_Dock_Area_Right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
+            this._Form1_Toolbars_Dock_Area_Right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this._Form1_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right;
             this._Form1_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText;
-            this._Form1_Toolbars_Dock_Area_Right.InitialResizeAreaExtent = 8;
-            this._Form1_Toolbars_Dock_Area_Right.Location = new System.Drawing.Point(950, 187);
+            this._Form1_Toolbars_Dock_Area_Right.InitialResizeAreaExtent = 1;
+            this._Form1_Toolbars_Dock_Area_Right.Location = new System.Drawing.Point(957, 174);
             this._Form1_Toolbars_Dock_Area_Right.Name = "_Form1_Toolbars_Dock_Area_Right";
-            this._Form1_Toolbars_Dock_Area_Right.Size = new System.Drawing.Size(8, 271);
+            this._Form1_Toolbars_Dock_Area_Right.Size = new System.Drawing.Size(1, 291);
             this._Form1_Toolbars_Dock_Area_Right.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _Form1_Toolbars_Dock_Area_Top
             // 
             this._Form1_Toolbars_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this._Form1_Toolbars_Dock_Area_Top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
+            this._Form1_Toolbars_Dock_Area_Top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this._Form1_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top;
             this._Form1_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText;
             this._Form1_Toolbars_Dock_Area_Top.Location = new System.Drawing.Point(0, 0);
             this._Form1_Toolbars_Dock_Area_Top.Name = "_Form1_Toolbars_Dock_Area_Top";
-            this._Form1_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(958, 187);
+            this._Form1_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(958, 174);
             this._Form1_Toolbars_Dock_Area_Top.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _Form1_Toolbars_Dock_Area_Bottom
             // 
             this._Form1_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this._Form1_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
+            this._Form1_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this._Form1_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom;
             this._Form1_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText;
-            this._Form1_Toolbars_Dock_Area_Bottom.InitialResizeAreaExtent = 8;
-            this._Form1_Toolbars_Dock_Area_Bottom.Location = new System.Drawing.Point(0, 458);
+            this._Form1_Toolbars_Dock_Area_Bottom.InitialResizeAreaExtent = 1;
+            this._Form1_Toolbars_Dock_Area_Bottom.Location = new System.Drawing.Point(0, 465);
             this._Form1_Toolbars_Dock_Area_Bottom.Name = "_Form1_Toolbars_Dock_Area_Bottom";
-            this._Form1_Toolbars_Dock_Area_Bottom.Size = new System.Drawing.Size(958, 8);
+            this._Form1_Toolbars_Dock_Area_Bottom.Size = new System.Drawing.Size(958, 1);
             this._Form1_Toolbars_Dock_Area_Bottom.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // Form1
@@ -125,7 +128,8 @@
             this.Controls.Add(this._Form1_Toolbars_Dock_Area_Bottom);
             this.Controls.Add(this._Form1_Toolbars_Dock_Area_Top);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Hospital Management Application";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ultraToolbarsManager1)).EndInit();
             this.ResumeLayout(false);
 
