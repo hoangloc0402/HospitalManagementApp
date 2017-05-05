@@ -62,7 +62,7 @@
             this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(74)))), ((int)(((byte)(50)))));
             this.loginButton.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(25, 244);
+            this.loginButton.Location = new System.Drawing.Point(25, 245);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(282, 49);
             this.loginButton.TabIndex = 0;
