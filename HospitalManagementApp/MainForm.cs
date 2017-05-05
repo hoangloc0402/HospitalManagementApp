@@ -47,14 +47,14 @@ namespace HospitalManagementApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            OracleDataAdapter da = new OracleDataAdapter();
-            OracleCommand cmd = new OracleCommand("select * from nhanvien",conn);
-            cmd.CommandType = CommandType.Text;
-            da.SelectCommand = cmd;
-            DataTable dataTable = new DataTable();
-            da.Fill(dataTable);
-            dataGridView1.DataSource = dataTable;
-            
+            DatabaseHelper dbHelper = new DatabaseHelper(conn);
+            String ten;
+            DataTableCollection tables = dbHelper.TimBN("1", out ten);
+            labelTen.Text = ten;
+            dataGridViewSDT.DataSource = tables[0];
+            dataGridViewDotDieuTri.DataSource = tables[1];
+            dataGridViewLanKhamBenh.DataSource = tables[2];
+
         }
 
         private void ultraButton1_Click(object sender, EventArgs e)

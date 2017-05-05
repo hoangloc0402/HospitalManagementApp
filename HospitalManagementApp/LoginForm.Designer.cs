@@ -39,12 +39,13 @@
             // 
             // loginButton
             // 
+            this.loginButton.BackColor = System.Drawing.SystemColors.Window;
             this.loginButton.Location = new System.Drawing.Point(496, 264);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(114, 38);
             this.loginButton.TabIndex = 0;
             this.loginButton.Text = "Đăng nhập";
-            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // textEditorName
@@ -90,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(984, 461);
             this.Controls.Add(this.textEditorPassword);
             this.Controls.Add(this.ultraLabel2);
