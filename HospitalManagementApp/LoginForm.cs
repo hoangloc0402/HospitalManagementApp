@@ -13,10 +13,20 @@ namespace HospitalManagementApp
 {
     public partial class LoginForm : Form
     {
+        private bool nameEdited;
+        private bool passEdited;
+        private void defaultText()
+        {
+            textEditorName.Text = "Tên đăng nhập";
+            textEditorPassword.Text = "mật khẩu";
+            nameEdited = false;
+            passEdited = false;
+        }
         public LoginForm()
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            defaultText();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,6 +49,7 @@ namespace HospitalManagementApp
             {
                 MessageBox.Show("Sai tài khoản hoặc mật khẩu","Oops!...");
             }
+            defaultText();
         }
 
         private void textEditorName_KeyDown(object sender, KeyEventArgs e)
@@ -49,6 +60,43 @@ namespace HospitalManagementApp
         private void textEditorPassword_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) login();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void textEditorName_AfterEnterEditMode(object sender, EventArgs e)
+        {
+            if (!nameEdited)
+                textEditorName.Text = String.Empty;
+        }
+
+        private void textEditorName_AfterExitEditMode(object sender, EventArgs e)
+        {
+            if (textEditorName.Text == String.Empty)
+            {
+                textEditorName.Text = "Tên đăng nhập";
+            }
+            else
+                nameEdited = true;
+        }
+
+        private void textEditorPassword_AfterEnterEditMode(object sender, EventArgs e)
+        {
+            if (!passEdited)
+                textEditorPassword.Text = String.Empty;
+        }
+
+        private void textEditorPassword_AfterExitEditMode(object sender, EventArgs e)
+        {
+            if (textEditorPassword.Text == String.Empty)
+            {
+                textEditorPassword.Text = "mật khẩu";
+            }
+            else
+                passEdited = true;
         }
     }
 }
