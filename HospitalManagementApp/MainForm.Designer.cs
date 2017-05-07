@@ -40,25 +40,28 @@
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool1 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaBN");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool1 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonTimMa");
             Infragistics.Win.UltraWinToolbars.RibbonGroup ribbonGroup2 = new Infragistics.Win.UltraWinToolbars.RibbonGroup("ribbonGroup2");
-            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool3 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaBNthem");
+            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool22 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaBN");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool5 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxTen");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool7 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxDiaChi");
             Infragistics.Win.UltraWinToolbars.ComboBoxTool comboBoxTool1 = new Infragistics.Win.UltraWinToolbars.ComboBoxTool("comboboxLoaiBN");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool3 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonThem");
+            Infragistics.Win.UltraWinToolbars.RibbonGroup ribbonGroup3 = new Infragistics.Win.UltraWinToolbars.RibbonGroup("ribbonGroup3");
+            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool14 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaBN");
+            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool19 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxSDT");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool9 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonSDT");
             Infragistics.Win.UltraWinToolbars.RibbonTab ribbonTab2 = new Infragistics.Win.UltraWinToolbars.RibbonTab("ribbon2");
-            Infragistics.Win.UltraWinToolbars.RibbonGroup ribbonGroup3 = new Infragistics.Win.UltraWinToolbars.RibbonGroup("ribbonGroup1");
+            Infragistics.Win.UltraWinToolbars.RibbonGroup ribbonGroup4 = new Infragistics.Win.UltraWinToolbars.RibbonGroup("ribbonGroup1");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool16 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaPhong");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool11 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaKhu");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool6 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttontimDSThuoc");
             Infragistics.Win.UltraWinToolbars.RibbonTab ribbonTab3 = new Infragistics.Win.UltraWinToolbars.RibbonTab("ribbon3");
-            Infragistics.Win.UltraWinToolbars.RibbonGroup ribbonGroup4 = new Infragistics.Win.UltraWinToolbars.RibbonGroup("ribbonGroup1");
+            Infragistics.Win.UltraWinToolbars.RibbonGroup ribbonGroup5 = new Infragistics.Win.UltraWinToolbars.RibbonGroup("ribbonGroup1");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool9 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("mabnBaoCao");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool5 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonTaoBaoCao");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool2 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaBN");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool2 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonTimMa");
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool4 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaBNthem");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool6 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxTen");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool8 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxDiaChi");
             Infragistics.Win.UltraWinToolbars.ComboBoxTool comboBoxTool2 = new Infragistics.Win.UltraWinToolbars.ComboBoxTool("comboboxLoaiBN");
@@ -76,12 +79,15 @@
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool12 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonDangXuat");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool15 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("TextBoxTool1");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool17 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaPhong");
+            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool20 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxSDT");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool14 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonSDT");
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewDotDieuTri = new System.Windows.Forms.DataGridView();
             this.labelTen = new System.Windows.Forms.Label();
             this.dataGridViewLanKhamBenh = new System.Windows.Forms.DataGridView();
@@ -97,6 +103,7 @@
             this._MainForm_Toolbars_Dock_Area_Top = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._MainForm_Toolbars_Dock_Area_Bottom = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this.panelDD = new System.Windows.Forms.Panel();
+            this.dataGridViewDSThuoc = new System.Windows.Forms.DataGridView();
             this.panelBaoCao = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -113,20 +120,19 @@
             this.dataGridViewBenhAn = new System.Windows.Forms.DataGridView();
             this.labelTongTien = new System.Windows.Forms.Label();
             this.labelTenBaoCao = new System.Windows.Forms.Label();
-            this.dataGridViewDSThuoc = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDotDieuTri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLanKhamBenh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSDT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraToolbarsManager1)).BeginInit();
             this.panelBenhNhan.SuspendLayout();
             this.panelDD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSThuoc)).BeginInit();
             this.panelBaoCao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDungCu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThuoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDotDT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhauThuat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBenhAn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSThuoc)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewDotDieuTri
@@ -237,33 +243,41 @@
             textBoxTool7.InstanceProps.IsFirstInGroup = true;
             buttonTool3.InstanceProps.MinimumSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large;
             ribbonGroup2.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
-            textBoxTool3,
+            textBoxTool22,
             textBoxTool5,
             textBoxTool7,
             comboBoxTool1,
             buttonTool3});
+            ribbonGroup3.Caption = "Thêm số điện thoại cho bệnh nhân";
+            ribbonGroup3.LayoutAlignment = Infragistics.Win.UltraWinToolbars.RibbonGroupLayoutAlignment.Far;
+            buttonTool9.InstanceProps.MinimumSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large;
+            ribbonGroup3.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            textBoxTool14,
+            textBoxTool19,
+            buttonTool9});
             ribbonTab1.Groups.AddRange(new Infragistics.Win.UltraWinToolbars.RibbonGroup[] {
             ribbonGroup1,
-            ribbonGroup2});
+            ribbonGroup2,
+            ribbonGroup3});
             ribbonTab2.Caption = "Danh sách thuốc";
-            ribbonGroup3.Caption = "Xem danh sách thuốc theo phòng";
-            ribbonGroup3.LayoutAlignment = Infragistics.Win.UltraWinToolbars.RibbonGroupLayoutAlignment.Far;
+            ribbonGroup4.Caption = "Xem danh sách thuốc theo phòng";
+            ribbonGroup4.LayoutAlignment = Infragistics.Win.UltraWinToolbars.RibbonGroupLayoutAlignment.Far;
             buttonTool6.InstanceProps.MinimumSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large;
-            ribbonGroup3.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            ribbonGroup4.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
             textBoxTool16,
             textBoxTool11,
             buttonTool6});
             ribbonTab2.Groups.AddRange(new Infragistics.Win.UltraWinToolbars.RibbonGroup[] {
-            ribbonGroup3});
+            ribbonGroup4});
             ribbonTab3.Caption = "Báo cáo";
-            ribbonGroup4.Caption = "Tạo báo cáo";
-            ribbonGroup4.LayoutAlignment = Infragistics.Win.UltraWinToolbars.RibbonGroupLayoutAlignment.Center;
+            ribbonGroup5.Caption = "Tạo báo cáo";
+            ribbonGroup5.LayoutAlignment = Infragistics.Win.UltraWinToolbars.RibbonGroupLayoutAlignment.Center;
             buttonTool5.InstanceProps.MinimumSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large;
-            ribbonGroup4.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            ribbonGroup5.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
             textBoxTool9,
             buttonTool5});
             ribbonTab3.Groups.AddRange(new Infragistics.Win.UltraWinToolbars.RibbonGroup[] {
-            ribbonGroup4});
+            ribbonGroup5});
             this.ultraToolbarsManager1.Ribbon.NonInheritedRibbonTabs.AddRange(new Infragistics.Win.UltraWinToolbars.RibbonTab[] {
             ribbonTab1,
             ribbonTab2,
@@ -275,7 +289,6 @@
             appearance1.Image = ((object)(resources.GetObject("appearance1.Image")));
             buttonTool2.SharedPropsInternal.AppearancesLarge.Appearance = appearance1;
             buttonTool2.SharedPropsInternal.Caption = "Tìm bệnh nhân";
-            textBoxTool4.SharedPropsInternal.Caption = "Mã bệnh nhân";
             textBoxTool6.SharedPropsInternal.Caption = "Tên";
             textBoxTool8.SharedPropsInternal.Caption = "Địa chỉ";
             comboBoxTool2.SharedPropsInternal.Caption = "Loại";
@@ -296,10 +309,13 @@
             buttonTool12.SharedPropsInternal.Caption = "Đăng xuất";
             textBoxTool15.SharedPropsInternal.Caption = "TextBoxTool1";
             textBoxTool17.SharedPropsInternal.Caption = "Mã phòng";
+            textBoxTool20.SharedPropsInternal.Caption = "Số điện thoại";
+            appearance5.Image = ((object)(resources.GetObject("appearance5.Image")));
+            buttonTool14.SharedPropsInternal.AppearancesLarge.Appearance = appearance5;
+            buttonTool14.SharedPropsInternal.Caption = "Thêm số điện thoại";
             this.ultraToolbarsManager1.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
             textBoxTool2,
             buttonTool2,
-            textBoxTool4,
             textBoxTool6,
             textBoxTool8,
             comboBoxTool2,
@@ -312,7 +328,9 @@
             buttonTool10,
             buttonTool12,
             textBoxTool15,
-            textBoxTool17});
+            textBoxTool17,
+            textBoxTool20,
+            buttonTool14});
             this.ultraToolbarsManager1.AfterRibbonTabSelected += new Infragistics.Win.UltraWinToolbars.RibbonTabEventHandler(this.ultraToolbarsManager1_AfterRibbonTabSelected);
             this.ultraToolbarsManager1.ToolClick += new Infragistics.Win.UltraWinToolbars.ToolClickEventHandler(this.ultraToolbarsManager1_ToolClick);
             // 
@@ -377,9 +395,9 @@
             this._MainForm_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left;
             this._MainForm_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText;
             this._MainForm_Toolbars_Dock_Area_Left.InitialResizeAreaExtent = 1;
-            this._MainForm_Toolbars_Dock_Area_Left.Location = new System.Drawing.Point(0, 149);
+            this._MainForm_Toolbars_Dock_Area_Left.Location = new System.Drawing.Point(0, 174);
             this._MainForm_Toolbars_Dock_Area_Left.Name = "_MainForm_Toolbars_Dock_Area_Left";
-            this._MainForm_Toolbars_Dock_Area_Left.Size = new System.Drawing.Size(1, 350);
+            this._MainForm_Toolbars_Dock_Area_Left.Size = new System.Drawing.Size(1, 325);
             this._MainForm_Toolbars_Dock_Area_Left.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _MainForm_Toolbars_Dock_Area_Right
@@ -389,9 +407,9 @@
             this._MainForm_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right;
             this._MainForm_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText;
             this._MainForm_Toolbars_Dock_Area_Right.InitialResizeAreaExtent = 1;
-            this._MainForm_Toolbars_Dock_Area_Right.Location = new System.Drawing.Point(999, 149);
+            this._MainForm_Toolbars_Dock_Area_Right.Location = new System.Drawing.Point(999, 174);
             this._MainForm_Toolbars_Dock_Area_Right.Name = "_MainForm_Toolbars_Dock_Area_Right";
-            this._MainForm_Toolbars_Dock_Area_Right.Size = new System.Drawing.Size(1, 350);
+            this._MainForm_Toolbars_Dock_Area_Right.Size = new System.Drawing.Size(1, 325);
             this._MainForm_Toolbars_Dock_Area_Right.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _MainForm_Toolbars_Dock_Area_Top
@@ -402,7 +420,7 @@
             this._MainForm_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText;
             this._MainForm_Toolbars_Dock_Area_Top.Location = new System.Drawing.Point(0, 0);
             this._MainForm_Toolbars_Dock_Area_Top.Name = "_MainForm_Toolbars_Dock_Area_Top";
-            this._MainForm_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(1000, 149);
+            this._MainForm_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(1000, 174);
             this._MainForm_Toolbars_Dock_Area_Top.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _MainForm_Toolbars_Dock_Area_Bottom
@@ -424,6 +442,29 @@
             this.panelDD.Name = "panelDD";
             this.panelDD.Size = new System.Drawing.Size(200, 100);
             this.panelDD.TabIndex = 5;
+            // 
+            // dataGridViewDSThuoc
+            // 
+            this.dataGridViewDSThuoc.AllowUserToAddRows = false;
+            this.dataGridViewDSThuoc.AllowUserToDeleteRows = false;
+            this.dataGridViewDSThuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewDSThuoc.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewDSThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewDSThuoc.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewDSThuoc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewDSThuoc.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewDSThuoc.Name = "dataGridViewDSThuoc";
+            this.dataGridViewDSThuoc.ReadOnly = true;
+            this.dataGridViewDSThuoc.RowHeadersVisible = false;
+            this.dataGridViewDSThuoc.Size = new System.Drawing.Size(200, 100);
+            this.dataGridViewDSThuoc.TabIndex = 23;
             // 
             // panelBaoCao
             // 
@@ -652,29 +693,6 @@
             this.labelTenBaoCao.TabIndex = 0;
             this.labelTenBaoCao.Text = "ten";
             // 
-            // dataGridViewDSThuoc
-            // 
-            this.dataGridViewDSThuoc.AllowUserToAddRows = false;
-            this.dataGridViewDSThuoc.AllowUserToDeleteRows = false;
-            this.dataGridViewDSThuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewDSThuoc.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridViewDSThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewDSThuoc.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridViewDSThuoc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewDSThuoc.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewDSThuoc.Name = "dataGridViewDSThuoc";
-            this.dataGridViewDSThuoc.ReadOnly = true;
-            this.dataGridViewDSThuoc.RowHeadersVisible = false;
-            this.dataGridViewDSThuoc.Size = new System.Drawing.Size(200, 100);
-            this.dataGridViewDSThuoc.TabIndex = 23;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -697,6 +715,7 @@
             this.panelBenhNhan.ResumeLayout(false);
             this.panelBenhNhan.PerformLayout();
             this.panelDD.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSThuoc)).EndInit();
             this.panelBaoCao.ResumeLayout(false);
             this.panelBaoCao.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDungCu)).EndInit();
@@ -704,7 +723,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDotDT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhauThuat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBenhAn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSThuoc)).EndInit();
             this.ResumeLayout(false);
 
         }

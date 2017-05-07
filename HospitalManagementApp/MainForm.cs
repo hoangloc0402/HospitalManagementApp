@@ -87,7 +87,7 @@ namespace HospitalManagementApp
                     
                     break;
                 case "buttonThem":    // Button Them
-                    String mabn=((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaBNthem"]).Text;
+                    String mabn=((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaBN"]).Text;
                     String tenbn = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxTen"]).Text;
                     String diachi = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxDiaChi"]).Text;
                     String loaibn;
@@ -112,6 +112,36 @@ namespace HospitalManagementApp
                         else MessageBox.Show(ex.Message);
                     }
                     break;
+                case "buttonSDT":
+                    String mabnSDT = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaBN"]).Text;
+                    String sdt = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxSDT"]).Text;
+                    try
+                    {
+                        dbHelper.ThemSDTBN(mabnSDT, sdt);
+                        MessageBox.Show("Đã thêm số điện thoại cho bệnh nhân thành công", "Thành công");
+                    }
+                    catch (OracleException ex)
+                    {
+                        if (ex.Number == 02291)
+                        {
+                            MessageBox.Show("Mã bệnh nhân không tồn tại", "Lỗi");
+                        }
+                        else if (ex.Number == 01400)
+                        {
+                            MessageBox.Show("Không được để trống bất cứ thông tin nào", "Lỗi");
+                        }
+                        else if(ex.Number== 00001)
+                        {
+                            MessageBox.Show("Số điện thoại của bệnh nhân đã tồn tại", "Lỗi");
+                        }
+                        else
+                        MessageBox.Show(ex.Message);
+                    }
+                    catch (FormatException)
+                    {
+                        MessageBox.Show("Số điện thoại không được chứa kí tự", "Lỗi");
+                    }
+                    break;
                 case "buttontimDSThuoc":    // Button dieu duong
                     String maphong = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaPhong"]).Text;
                     String makhu = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaKhu"]).Text;
@@ -123,7 +153,8 @@ namespace HospitalManagementApp
                     }
                     catch (OracleException ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        MessageBox.Show("Không tìm thấy phòng", "Không tìm thấy");
+                        panelManager.HideAllPanel();
                     }
                     break;
                 case "buttonTaoBaoCao": //button tao bao cao

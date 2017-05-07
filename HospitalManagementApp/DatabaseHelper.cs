@@ -43,6 +43,16 @@ namespace HospitalManagementApp
             OracleDataAdapter da = new OracleDataAdapter(cmd);
             cmd.ExecuteNonQuery();
         }
+        public void ThemSDTBN(String mabn, String sdt)
+        {
+            int a = Int32.Parse(sdt);
+            OracleCommand cmd = new OracleCommand("THEMSDTBN", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("P_MABN", OracleDbType.Varchar2).Value = mabn;
+            cmd.Parameters.Add("P_SDT", OracleDbType.Varchar2).Value = sdt;
+            OracleDataAdapter da = new OracleDataAdapter(cmd);
+            cmd.ExecuteNonQuery();
+        }
         public DataTableCollection DanhSachThuoc(String maphong, String makhu)
         {
             OracleCommand cmd = new OracleCommand("DSTHUOC", conn);
