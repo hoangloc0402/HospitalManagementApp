@@ -139,7 +139,7 @@ namespace HospitalManagementApp
                     }
                     catch (FormatException)
                     {
-                        MessageBox.Show("Số điện thoại không được chứa kí tự", "Lỗi");
+                        MessageBox.Show("Số điện thoại không đúng định dạng", "Lỗi");
                     }
                     break;
                 case "buttontimDSThuoc":    // Button dieu duong

@@ -395,9 +395,9 @@
             this._MainForm_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left;
             this._MainForm_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText;
             this._MainForm_Toolbars_Dock_Area_Left.InitialResizeAreaExtent = 1;
-            this._MainForm_Toolbars_Dock_Area_Left.Location = new System.Drawing.Point(0, 174);
+            this._MainForm_Toolbars_Dock_Area_Left.Location = new System.Drawing.Point(0, 149);
             this._MainForm_Toolbars_Dock_Area_Left.Name = "_MainForm_Toolbars_Dock_Area_Left";
-            this._MainForm_Toolbars_Dock_Area_Left.Size = new System.Drawing.Size(1, 325);
+            this._MainForm_Toolbars_Dock_Area_Left.Size = new System.Drawing.Size(1, 350);
             this._MainForm_Toolbars_Dock_Area_Left.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _MainForm_Toolbars_Dock_Area_Right
@@ -407,9 +407,9 @@
             this._MainForm_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right;
             this._MainForm_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText;
             this._MainForm_Toolbars_Dock_Area_Right.InitialResizeAreaExtent = 1;
-            this._MainForm_Toolbars_Dock_Area_Right.Location = new System.Drawing.Point(999, 174);
+            this._MainForm_Toolbars_Dock_Area_Right.Location = new System.Drawing.Point(999, 149);
             this._MainForm_Toolbars_Dock_Area_Right.Name = "_MainForm_Toolbars_Dock_Area_Right";
-            this._MainForm_Toolbars_Dock_Area_Right.Size = new System.Drawing.Size(1, 325);
+            this._MainForm_Toolbars_Dock_Area_Right.Size = new System.Drawing.Size(1, 350);
             this._MainForm_Toolbars_Dock_Area_Right.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _MainForm_Toolbars_Dock_Area_Top
@@ -420,7 +420,7 @@
             this._MainForm_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText;
             this._MainForm_Toolbars_Dock_Area_Top.Location = new System.Drawing.Point(0, 0);
             this._MainForm_Toolbars_Dock_Area_Top.Name = "_MainForm_Toolbars_Dock_Area_Top";
-            this._MainForm_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(1000, 174);
+            this._MainForm_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(1000, 149);
             this._MainForm_Toolbars_Dock_Area_Top.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _MainForm_Toolbars_Dock_Area_Bottom
