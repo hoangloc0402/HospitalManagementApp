@@ -33,6 +33,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool11 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonDangXuat");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool13 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonThoat");
             Infragistics.Win.UltraWinToolbars.RibbonTab ribbonTab1 = new Infragistics.Win.UltraWinToolbars.RibbonTab("ribbon1");
             Infragistics.Win.UltraWinToolbars.RibbonGroup ribbonGroup1 = new Infragistics.Win.UltraWinToolbars.RibbonGroup("ribbonGroup1");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool1 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaBN");
@@ -45,8 +47,9 @@
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool3 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonThem");
             Infragistics.Win.UltraWinToolbars.RibbonTab ribbonTab2 = new Infragistics.Win.UltraWinToolbars.RibbonTab("ribbon2");
             Infragistics.Win.UltraWinToolbars.RibbonGroup ribbonGroup3 = new Infragistics.Win.UltraWinToolbars.RibbonGroup("ribbonGroup1");
-            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool11 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxmadd");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool6 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttontimmadd");
+            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool16 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaPhong");
+            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool11 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaKhu");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool6 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttontimDSThuoc");
             Infragistics.Win.UltraWinToolbars.RibbonTab ribbonTab3 = new Infragistics.Win.UltraWinToolbars.RibbonTab("ribbon3");
             Infragistics.Win.UltraWinToolbars.RibbonGroup ribbonGroup4 = new Infragistics.Win.UltraWinToolbars.RibbonGroup("ribbonGroup1");
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool9 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("mabnBaoCao");
@@ -63,17 +66,22 @@
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool10 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxmanv");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool4 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonThem");
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool12 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxmadd");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool7 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttontimmadd");
+            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool12 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaKhu");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool7 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttontimDSThuoc");
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool13 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("mabnBaoCao");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool8 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonTaoBaoCao");
             Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool10 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonThoat");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool12 = new Infragistics.Win.UltraWinToolbars.ButtonTool("buttonDangXuat");
+            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool15 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("TextBoxTool1");
+            Infragistics.Win.UltraWinToolbars.TextBoxTool textBoxTool17 = new Infragistics.Win.UltraWinToolbars.TextBoxTool("textboxMaPhong");
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewDotDieuTri = new System.Windows.Forms.DataGridView();
             this.labelTen = new System.Windows.Forms.Label();
             this.dataGridViewLanKhamBenh = new System.Windows.Forms.DataGridView();
@@ -89,8 +97,15 @@
             this._MainForm_Toolbars_Dock_Area_Top = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._MainForm_Toolbars_Dock_Area_Bottom = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this.panelDD = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.panelBaoCao = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.dataGridViewDungCu = new System.Windows.Forms.DataGridView();
             this.dataGridViewThuoc = new System.Windows.Forms.DataGridView();
             this.dataGridViewDotDT = new System.Windows.Forms.DataGridView();
@@ -98,14 +113,7 @@
             this.dataGridViewBenhAn = new System.Windows.Forms.DataGridView();
             this.labelTongTien = new System.Windows.Forms.Label();
             this.labelTenBaoCao = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.dataGridViewDSThuoc = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDotDieuTri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLanKhamBenh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSDT)).BeginInit();
@@ -118,6 +126,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDotDT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhauThuat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBenhAn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSThuoc)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewDotDieuTri
@@ -199,12 +208,10 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewSDT.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewSDT.Location = new System.Drawing.Point(23, 81);
-            this.dataGridViewSDT.MaximumSize = new System.Drawing.Size(250, 100);
-            this.dataGridViewSDT.MinimumSize = new System.Drawing.Size(250, 10);
             this.dataGridViewSDT.Name = "dataGridViewSDT";
             this.dataGridViewSDT.ReadOnly = true;
             this.dataGridViewSDT.RowHeadersVisible = false;
-            this.dataGridViewSDT.Size = new System.Drawing.Size(250, 100);
+            this.dataGridViewSDT.Size = new System.Drawing.Size(250, 104);
             this.dataGridViewSDT.TabIndex = 17;
             // 
             // ultraToolbarsManager1
@@ -212,7 +219,11 @@
             this.ultraToolbarsManager1.DesignerFlags = 1;
             this.ultraToolbarsManager1.DockWithinContainer = this;
             this.ultraToolbarsManager1.DockWithinContainerBaseType = typeof(System.Windows.Forms.Form);
-            this.ultraToolbarsManager1.Ribbon.FileMenuButtonCaption = "";
+            this.ultraToolbarsManager1.Ribbon.ApplicationMenu2010.DisplayStyle = Infragistics.Win.UltraWinToolbars.ApplicationMenu2010DisplayStyle.Office2013;
+            this.ultraToolbarsManager1.Ribbon.ApplicationMenu2010.NavigationMenu.NonInheritedTools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            buttonTool11,
+            buttonTool13});
+            this.ultraToolbarsManager1.Ribbon.FileMenuButtonCaption = "App";
             this.ultraToolbarsManager1.Ribbon.FileMenuStyle = Infragistics.Win.UltraWinToolbars.FileMenuStyle.ApplicationMenu2010;
             ribbonTab1.Caption = "Bệnh nhân";
             ribbonGroup1.Caption = "Tìm thông tin bệnh nhân";
@@ -235,16 +246,17 @@
             ribbonGroup1,
             ribbonGroup2});
             ribbonTab2.Caption = "Danh sách thuốc";
-            ribbonGroup3.Caption = "ribbonGroup1";
-            ribbonGroup3.LayoutAlignment = Infragistics.Win.UltraWinToolbars.RibbonGroupLayoutAlignment.Center;
+            ribbonGroup3.Caption = "Xem danh sách thuốc theo phòng";
+            ribbonGroup3.LayoutAlignment = Infragistics.Win.UltraWinToolbars.RibbonGroupLayoutAlignment.Far;
             buttonTool6.InstanceProps.MinimumSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large;
             ribbonGroup3.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            textBoxTool16,
             textBoxTool11,
             buttonTool6});
             ribbonTab2.Groups.AddRange(new Infragistics.Win.UltraWinToolbars.RibbonGroup[] {
             ribbonGroup3});
             ribbonTab3.Caption = "Báo cáo";
-            ribbonGroup4.Caption = "ribbonGroup1";
+            ribbonGroup4.Caption = "Tạo báo cáo";
             ribbonGroup4.LayoutAlignment = Infragistics.Win.UltraWinToolbars.RibbonGroupLayoutAlignment.Center;
             buttonTool5.InstanceProps.MinimumSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large;
             ribbonGroup4.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
@@ -272,14 +284,18 @@
             appearance2.Image = ((object)(resources.GetObject("appearance2.Image")));
             buttonTool4.SharedPropsInternal.AppearancesLarge.Appearance = appearance2;
             buttonTool4.SharedPropsInternal.Caption = "Thêm bệnh nhân";
-            textBoxTool12.SharedPropsInternal.Caption = "Mã điều dưỡng";
+            textBoxTool12.SharedPropsInternal.Caption = "Mã khu";
             appearance3.Image = ((object)(resources.GetObject("appearance3.Image")));
             buttonTool7.SharedPropsInternal.AppearancesLarge.Appearance = appearance3;
-            buttonTool7.SharedPropsInternal.Caption = "Tìm danh sách thuốc";
+            buttonTool7.SharedPropsInternal.Caption = "Xem danh sách thuốc";
             textBoxTool13.SharedPropsInternal.Caption = "Mã bệnh nhân";
             appearance4.Image = ((object)(resources.GetObject("appearance4.Image")));
             buttonTool8.SharedPropsInternal.AppearancesLarge.Appearance = appearance4;
             buttonTool8.SharedPropsInternal.Caption = "Tạo báo cáo";
+            buttonTool10.SharedPropsInternal.Caption = "Thoát";
+            buttonTool12.SharedPropsInternal.Caption = "Đăng xuất";
+            textBoxTool15.SharedPropsInternal.Caption = "TextBoxTool1";
+            textBoxTool17.SharedPropsInternal.Caption = "Mã phòng";
             this.ultraToolbarsManager1.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
             textBoxTool2,
             buttonTool2,
@@ -292,7 +308,11 @@
             textBoxTool12,
             buttonTool7,
             textBoxTool13,
-            buttonTool8});
+            buttonTool8,
+            buttonTool10,
+            buttonTool12,
+            textBoxTool15,
+            textBoxTool17});
             this.ultraToolbarsManager1.AfterRibbonTabSelected += new Infragistics.Win.UltraWinToolbars.RibbonTabEventHandler(this.ultraToolbarsManager1_AfterRibbonTabSelected);
             this.ultraToolbarsManager1.ToolClick += new Infragistics.Win.UltraWinToolbars.ToolClickEventHandler(this.ultraToolbarsManager1_ToolClick);
             // 
@@ -399,21 +419,11 @@
             // 
             // panelDD
             // 
-            this.panelDD.AutoScroll = true;
-            this.panelDD.Controls.Add(this.label5);
+            this.panelDD.Controls.Add(this.dataGridViewDSThuoc);
             this.panelDD.Location = new System.Drawing.Point(334, 213);
             this.panelDD.Name = "panelDD";
             this.panelDD.Size = new System.Drawing.Size(200, 100);
             this.panelDD.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "label5";
             // 
             // panelBaoCao
             // 
@@ -433,11 +443,84 @@
             this.panelBaoCao.Controls.Add(this.dataGridViewBenhAn);
             this.panelBaoCao.Controls.Add(this.labelTongTien);
             this.panelBaoCao.Controls.Add(this.labelTenBaoCao);
-            this.panelBaoCao.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBaoCao.Location = new System.Drawing.Point(1, 149);
+            this.panelBaoCao.Location = new System.Drawing.Point(635, 213);
             this.panelBaoCao.Name = "panelBaoCao";
-            this.panelBaoCao.Size = new System.Drawing.Size(998, 350);
+            this.panelBaoCao.Size = new System.Drawing.Size(244, 147);
             this.panelBaoCao.TabIndex = 6;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(352, 539);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(97, 13);
+            this.label13.TabIndex = 30;
+            this.label13.Text = "                              ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(21, 404);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(59, 13);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "Đợt điều trị";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(18, 119);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 13);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Dụng cụ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(495, 119);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(38, 13);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "Thuốc";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(21, 254);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(86, 13);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Cuộc phẩu thuật";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(495, 14);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(47, 13);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Bệnh án";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.Location = new System.Drawing.Point(17, 64);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 20);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Tiền viện phí:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.Location = new System.Drawing.Point(18, 31);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(113, 18);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Tên bệnh nhân:";
             // 
             // dataGridViewDungCu
             // 
@@ -569,79 +652,28 @@
             this.labelTenBaoCao.TabIndex = 0;
             this.labelTenBaoCao.Text = "ten";
             // 
-            // label6
+            // dataGridViewDSThuoc
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.Location = new System.Drawing.Point(18, 31);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 18);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Tên bệnh nhân:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(17, 64);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 20);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Tiền viện phí:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(495, 14);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 13);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Bệnh án";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(21, 254);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 13);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Cuộc phẩu thuật";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(495, 119);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 13);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "Thuốc";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(18, 119);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 13);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "Dụng cụ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(21, 404);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(59, 13);
-            this.label12.TabIndex = 29;
-            this.label12.Text = "Đợt điều trị";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(352, 539);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(97, 13);
-            this.label13.TabIndex = 30;
-            this.label13.Text = "                              ";
+            this.dataGridViewDSThuoc.AllowUserToAddRows = false;
+            this.dataGridViewDSThuoc.AllowUserToDeleteRows = false;
+            this.dataGridViewDSThuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewDSThuoc.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewDSThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewDSThuoc.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewDSThuoc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewDSThuoc.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewDSThuoc.Name = "dataGridViewDSThuoc";
+            this.dataGridViewDSThuoc.ReadOnly = true;
+            this.dataGridViewDSThuoc.RowHeadersVisible = false;
+            this.dataGridViewDSThuoc.Size = new System.Drawing.Size(200, 100);
+            this.dataGridViewDSThuoc.TabIndex = 23;
             // 
             // MainForm
             // 
@@ -665,7 +697,6 @@
             this.panelBenhNhan.ResumeLayout(false);
             this.panelBenhNhan.PerformLayout();
             this.panelDD.ResumeLayout(false);
-            this.panelDD.PerformLayout();
             this.panelBaoCao.ResumeLayout(false);
             this.panelBaoCao.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDungCu)).EndInit();
@@ -673,6 +704,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDotDT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhauThuat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBenhAn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSThuoc)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -693,7 +725,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelDD;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panelBaoCao;
         private System.Windows.Forms.Label labelTenBaoCao;
         private System.Windows.Forms.Label labelTongTien;
@@ -710,6 +741,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DataGridView dataGridViewDSThuoc;
     }
 }
 

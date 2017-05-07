@@ -112,10 +112,21 @@ namespace HospitalManagementApp
                         else MessageBox.Show(ex.Message);
                     }
                     break;
-                case "buttontimmadd":    // Button dieu duong
-                    panelManager.ShowPanel(1);                     // Place code here
+                case "buttontimDSThuoc":    // Button dieu duong
+                    String maphong = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaPhong"]).Text;
+                    String makhu = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaKhu"]).Text;
+                    try { 
+                        DataTableCollection tablesDS = dbHelper.DanhSachThuoc(maphong,makhu);
+                        dataGridViewDSThuoc.DataSource = tablesDS[0];
+                        panelManager.ShowPanel(1);
+                        dataGridViewDSThuoc.ClearSelection();
+                    }
+                    catch (OracleException ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                     break;
-                case "buttonTaoBaoCao":
+                case "buttonTaoBaoCao": //button tao bao cao
                     String mabnbaocao = ((TextBoxTool)this.ultraToolbarsManager1.Tools["mabnBaoCao"]).Text;
                     String tenBC;
                     String tongtienBC;
@@ -138,6 +149,15 @@ namespace HospitalManagementApp
                     }
                     
                     
+                    break;
+                case "buttonThoat":    // ButtonTool
+                    Application.Exit();                   // Place code here
+                    break;
+
+                case "buttonDangXuat":    // ButtonTool
+                    this.Hide();
+                    LoginForm m = new LoginForm();
+                    m.Show();                      // Place code here
                     break;
 
             }

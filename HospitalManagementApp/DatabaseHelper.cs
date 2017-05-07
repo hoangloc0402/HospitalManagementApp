@@ -43,6 +43,19 @@ namespace HospitalManagementApp
             OracleDataAdapter da = new OracleDataAdapter(cmd);
             cmd.ExecuteNonQuery();
         }
+        public DataTableCollection DanhSachThuoc(String maphong, String makhu)
+        {
+            OracleCommand cmd = new OracleCommand("DSTHUOC", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("P_MAPHONG", OracleDbType.Varchar2).Value = maphong;
+            cmd.Parameters.Add("P_MAKHU", OracleDbType.Varchar2).Value = makhu;
+            cmd.Parameters.Add("P_DSTHUOC", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+            OracleDataAdapter da = new OracleDataAdapter(cmd);
+            cmd.ExecuteNonQuery();
+            DataSet ds = new DataSet();
+            da.Fill(ds, "A");
+            return ds.Tables;
+        }
         public DataTableCollection TaoBaoCao(String mabn, out String ten,out String tongtien)
         {
             OracleCommand cmd = new OracleCommand("TAOBAOCAO", conn);
