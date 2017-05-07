@@ -19,6 +19,8 @@ namespace HospitalManagementApp
         DatabaseHelper dbHelper;
         ComboBoxTool comboLoai;
         PanelManager panelManager;
+        List<DataGridView> gribBN = new List<DataGridView>();
+        List<DataGridView> gribBC = new List<DataGridView>();
         public MainForm(OracleConnection conn)
         {
             InitializeComponent();
@@ -34,7 +36,9 @@ namespace HospitalManagementApp
             ValueList v = new ValueList();
             v.ValueListItems.Add("Ngoại trú");
             v.ValueListItems.Add("Nội trú");
+            v.ValueListItems.Add("Cả hai");
             comboLoai.ValueList = v;
+            comboLoai.SelectedIndex = 0;
 
             List<Panel> panels = new List<Panel>();
             panels.Add(panelBenhNhan);
@@ -42,15 +46,21 @@ namespace HospitalManagementApp
             panels.Add(panelBaoCao);
             panelManager = new PanelManager(panels);
 
+            gribBN.Add(dataGridViewSDT);
+            gribBN.Add(dataGridViewDotDieuTri);
+            gribBN.Add(dataGridViewLanKhamBenh);
+
+            gribBC.Add(dataGridViewBenhAn);
+            gribBC.Add(dataGridViewPhauThuat);
+            gribBC.Add(dataGridViewDotDT);
+            gribBC.Add(dataGridViewThuoc);
+            gribBC.Add(dataGridViewDungCu);
+            
             panelBenhNhan.Dock = DockStyle.Fill;
            
 
         }
-
-        private void labelTen_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void ultraToolbarsManager1_ToolClick(object sender, ToolClickEventArgs e)
         {
@@ -68,7 +78,7 @@ namespace HospitalManagementApp
                         dataGridViewDotDieuTri.DataSource = tables[1];
                         dataGridViewLanKhamBenh.DataSource = tables[2];
                         panelManager.ShowPanel(0);
-                        ClearSelection();
+                        ClearSelection(gribBN);
                     }
                     catch (Exception) {
                         MessageBox.Show("Không tìm thấy bệnh nhân","Không tìm thấy");
@@ -77,35 +87,124 @@ namespace HospitalManagementApp
                     
                     break;
                 case "buttonThem":    // Button Them
-                    String mabn=((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaBNthem"]).Text;
+                    String mabn=((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaBN"]).Text;
                     String tenbn = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxTen"]).Text;
                     String diachi = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxDiaChi"]).Text;
                     String loaibn;
                     if (comboLoai.SelectedIndex == 0) loaibn = "NGOAITRU";
-                    else loaibn = "NOITRU";
-                    String manv = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxmanv"]).Text;
+                    else if (comboLoai.SelectedIndex == 0) loaibn = "NOITRU";
+                    else loaibn = "CAHAI";
+                    //String manv = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxmanv"]).Text;
                     try
                     {
-                        dbHelper.ThemBN(mabn,tenbn,diachi,loaibn,manv);
+                        dbHelper.ThemBN(mabn,tenbn,diachi,loaibn);
                         MessageBox.Show("Đã thêm bệnh nhân thành công", "Thành công");
                     }
-                    catch (Exception) {
-                        MessageBox.Show("Có lỗi xảy ra.\nVui lòng kiểm tra lại thông tin đã nhập.", "Lỗi");
+                    catch (OracleException ex) {
+                        if (ex.Number == 00001)
+                        {
+                            MessageBox.Show("Mã bệnh nhân đã tồn tại", "Lỗi");
+                        }
+                        else if(ex.Number == 01400)
+                        {
+                            MessageBox.Show("Không được để trống bất cứ thông tin nào", "Lỗi");
+                        }
+                        else MessageBox.Show(ex.Message);
                     }
                     break;
-                case "buttontimmadd":    // Button Tim danh sach thuoc
-                    panelManager.ShowPanel(1);                     // Place code here
+                case "buttonSDT":
+                    String mabnSDT = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaBN"]).Text;
+                    String sdt = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxSDT"]).Text;
+                    try
+                    {
+                        dbHelper.ThemSDTBN(mabnSDT, sdt);
+                        MessageBox.Show("Đã thêm số điện thoại cho bệnh nhân thành công", "Thành công");
+                    }
+                    catch (OracleException ex)
+                    {
+                        if (ex.Number == 02291)
+                        {
+                            MessageBox.Show("Mã bệnh nhân không tồn tại", "Lỗi");
+                        }
+                        else if (ex.Number == 01400)
+                        {
+                            MessageBox.Show("Không được để trống bất cứ thông tin nào", "Lỗi");
+                        }
+                        else if(ex.Number== 00001)
+                        {
+                            MessageBox.Show("Số điện thoại của bệnh nhân đã tồn tại", "Lỗi");
+                        }
+                        else
+                        MessageBox.Show(ex.Message);
+                    }
+                    catch (FormatException)
+                    {
+                        MessageBox.Show("Số điện thoại không được chứa kí tự", "Lỗi");
+                    }
+                    break;
+                case "buttontimDSThuoc":    // Button dieu duong
+                    String maphong = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaPhong"]).Text;
+                    String makhu = ((TextBoxTool)this.ultraToolbarsManager1.Tools["textboxMaKhu"]).Text;
+                    try { 
+                        DataTableCollection tablesDS = dbHelper.DanhSachThuoc(maphong,makhu);
+                        dataGridViewDSThuoc.DataSource = tablesDS[0];
+                        panelManager.ShowPanel(1);
+                        dataGridViewDSThuoc.ClearSelection();
+                    }
+                    catch (OracleException ex)
+                    {
+                        MessageBox.Show("Không tìm thấy phòng", "Không tìm thấy");
+                        panelManager.HideAllPanel();
+                    }
+                    break;
+                case "buttonTaoBaoCao": //button tao bao cao
+                    String mabnbaocao = ((TextBoxTool)this.ultraToolbarsManager1.Tools["mabnBaoCao"]).Text;
+                    String tenBC;
+                    String tongtienBC;
+                    try {
+                        DataTableCollection tablesBC = dbHelper.TaoBaoCao(mabnbaocao,out tenBC,out tongtienBC);
+                        labelTenBaoCao.Text = tenBC;
+                        labelTongTien.Text = tongtienBC+" Đồng";
+                        dataGridViewBenhAn.DataSource = tablesBC[0];
+                        dataGridViewPhauThuat.DataSource = tablesBC[1];
+                        dataGridViewDotDT.DataSource = tablesBC[2];
+                        dataGridViewThuoc.DataSource = tablesBC[3];
+                        dataGridViewDungCu.DataSource = tablesBC[4];
+                        panelManager.ShowPanel(2);
+                        ClearSelection(gribBC);
+                    }
+                    catch (OracleException ex)
+                    {
+                        MessageBox.Show("Không tìm thấy bệnh nhân", "Không tìm thấy");
+                        panelManager.HideAllPanel();
+                    }
+                    
+                    
+                    break;
+                case "buttonThoat":    // ButtonTool
+                    Application.Exit();                   // Place code here
+                    break;
+
+                case "buttonDangXuat":    // ButtonTool
+                    this.Hide();
+                    LoginForm m = new LoginForm();
+                    m.Show();                      // Place code here
                     break;
 
             }
 
 
         }
-        void ClearSelection()
+        void ClearSelection(List<DataGridView> l)
         {
-            dataGridViewDotDieuTri.ClearSelection();
-            dataGridViewSDT.ClearSelection();
-            dataGridViewLanKhamBenh.ClearSelection();
+            foreach (var g in l)
+            {
+                g.ClearSelection();
+            }
+        }
+        private void ultraToolbarsManager1_AfterRibbonTabSelected(object sender, RibbonTabEventArgs e)
+        {
+            panelManager.HideAllPanel();
         }
     }
 }
