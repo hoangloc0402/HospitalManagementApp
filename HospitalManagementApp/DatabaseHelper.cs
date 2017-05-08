@@ -11,11 +11,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace HospitalManagementApp
 {
-    class DatabaseHelper
+    public class DatabaseHelper
     {
         OracleConnection conn;
-        public DatabaseHelper(OracleConnection conn) {
-            this.conn = conn;
+        public DatabaseHelper(String connString) {
+            string oradb = connString;
+            conn = new OracleConnection(oradb);  // C
+            conn.Open();
         }
         public DataTableCollection TimBN(String maBN,out String ten) {
             OracleCommand cmd = new OracleCommand("TIMBN", conn);

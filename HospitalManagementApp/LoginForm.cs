@@ -39,17 +39,15 @@ namespace HospitalManagementApp
             try
             {
                 string oradb = "DATA SOURCE=127.0.0.1:1521/hospital;PERSIST SECURITY INFO=True;USER ID=" + textEditorName.Text + "; PASSWORD=" + textEditorPassword.Text + ";";
-                OracleConnection conn = new OracleConnection(oradb);  // C
-                conn.Open();
-                this.Hide();
-                MainForm m = new MainForm(conn);
+                DatabaseHelper dbHelper = new DatabaseHelper(oradb);
+                MainForm m = new MainForm(dbHelper);
                 m.Show();
+                this.Hide();
             }
             catch (OracleException)
             {
                 MessageBox.Show("Sai tài khoản hoặc mật khẩu","Oops!...");
             }
-            defaultText();
         }
 
         private void textEditorName_KeyDown(object sender, KeyEventArgs e)

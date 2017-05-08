@@ -21,17 +21,16 @@ namespace HospitalManagementApp
         PanelManager panelManager;
         List<DataGridView> gribBN = new List<DataGridView>();
         List<DataGridView> gribBC = new List<DataGridView>();
-        public MainForm(OracleConnection conn)
+        public MainForm(DatabaseHelper db)
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
-            this.conn = conn;
+            dbHelper = db;
         }
         
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dbHelper = new DatabaseHelper(conn);
             comboLoai = ((ComboBoxTool)this.ultraToolbarsManager1.Tools["comboboxLoaiBN"]);//tao comboBox Loai
             ValueList v = new ValueList();
             v.ValueListItems.Add("Ngoại trú");
