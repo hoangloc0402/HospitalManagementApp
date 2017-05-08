@@ -64,7 +64,7 @@ namespace HospitalManagementApp
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void textEditorName_AfterEnterEditMode(object sender, EventArgs e)
