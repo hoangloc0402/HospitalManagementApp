@@ -78,6 +78,7 @@ namespace HospitalManagementApp
             if (textEditorName.Text == String.Empty)
             {
                 textEditorName.Text = "Tên đăng nhập";
+                nameEdited = false;
             }
             else
                 nameEdited = true;
@@ -94,6 +95,7 @@ namespace HospitalManagementApp
             if (textEditorPassword.Text == String.Empty)
             {
                 textEditorPassword.Text = "mật khẩu";
+                passEdited = false;
             }
             else
                 passEdited = true;
